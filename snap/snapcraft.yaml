@@ -1,0 +1,24 @@
+name: olibox-core
+base: core18
+version: '0.1dev'
+summary: Core functionality for Oli box
+description: |
+    Olibox_core module provides the basic functionality 
+    to wrtie data from IR sensor and REST API to json files
+    and publish this data to mqtt broker.
+    This utility is particularly useful for Oli box.
+base: core
+grade: devel
+confinement: devmode
+
+parts:
+  olibox-core:
+    source: https://github.com/olisystems/olibox_core.git
+    source-tag: 0.1dev
+    plugin: python
+    source: .
+    requirements: ['requirements.txt']
+
+apps:
+  olibox-core:
+    command: bin/olibox-core

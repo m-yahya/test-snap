@@ -1,0 +1,14 @@
+
+#Web3 related imports
+#web3 
+
+#modbus
+pymodbus
+
+#MQTT 
+paho-mqtt
+
+#Other 
+datetime
+
+toml

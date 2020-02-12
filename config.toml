@@ -1,0 +1,45 @@
+title = "OLI BOX Config"
+
+[mqtt_connection]
+mqtt_broker_ip = "unbelievable-politician.cloudmqtt.com"
+mqtt_broker_port = "8883"
+ssl_cert_path = "ca-certificates.crt"
+mqtt_username = "gmnzhypg"
+mqtt_password = "zEb0WyhKguIn"
+send_power_data = "True"
+send_energy_data = "True"
+energy_sending_interval = "900"
+power_sending_interval = "5"
+
+[olibox_config]
+oli_box_id = "6"
+project_id = "dose"
+device_type = "pv"
+market_type = "producer" 
+
+[ethereum]
+use_ethereum = "False"
+rpc_endpoint = "localhost"
+rpc_port = "8545"
+
+[modbusTCP]
+use_modbustcp = "False"
+modbus_server_ip = "False"
+modbus_server_port = "False"
+modbus_server_energy_demand_register = "False"
+modbus_server_power_demand_register = "False"
+modbus_server_energy_supply_register = "False"
+modbus_server_power_supply_register = "False"
+
+[ir_sensor]
+use_ir = "False"
+ir_impulse_rate = "10000"
+power_writing_interval = "3"
+energy_writing_interval = "900"
+
+[rest_api]
+oli_restapi_ip = "192.168.1.200"
+oli_restapi_query = "/api/all/power/now"
+oli_restapi_port = "1080"
+oli_restapi_read_interval = "5"
+oli_restapi_send_interval = "5"
