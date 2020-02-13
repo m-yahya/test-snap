@@ -13,7 +13,7 @@ confinement: devmode
 
 parts:
   olibox-core:
-    source: https://github.com/olisystems/olibox_core.git
+    source: https://github.com/m-yahya/test-snap.git
     source-tag: 0.1dev
     plugin: python
     #source: .
