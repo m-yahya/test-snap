@@ -16,7 +16,7 @@ parts:
     source: https://github.com/olisystems/olibox_core.git
     source-tag: 0.1dev
     plugin: python
-    source: .
+    #source: .
     requirements: ['requirements.txt']
 
 apps:
