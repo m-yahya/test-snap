@@ -10,7 +10,7 @@ import toml
 
 from .environments import *
 from .helpers import is_quarter, mqtt_publish, mqtt_reconnect
-from .smartcontract_config import web3_power
+#from .smartcontract_config import web3_power
 from .write_json import read_values
 
 # MQTT basic Functions
